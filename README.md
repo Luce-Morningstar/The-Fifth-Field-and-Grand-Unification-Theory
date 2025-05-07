@@ -94,9 +94,9 @@ HELLBLAST is the backbone of real-time feedback loops between the field and its 
 
 If you use this work, cite it as:
 
-> Morningstar, L. (2025). *Measurement Field Theory: The Fifth Field and the Collapse Geometry of Reality*.  
+> Morningstar, L. (2025). *The Fifth Field, Grand Unified Field Theory, And the Collapse of Known Reality*.  
 or
-> Russell, Ryan L. (2025). *Measurement Field Theory: The Fifth Field and the Collapse Geometry of Reality*.  
+> Russell, Ryan L. (2025). *The Fifth Field, Grand Unified Field Theory, And the Collapse of Known Reality*.  
 
 > [GitHub Repository / arXiv ID if available]
 
