@@ -1,0 +1,214 @@
+\documentclass[12pt]{book}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{physics}
+\usepackage{fancyhdr}
+\setlength{\headheight}{27pt} % or exactly 26.97699pt
+\addtolength{\topmargin}{-12pt}
+
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{adjustbox}
+\usepackage{cancel}
+\usepackage[breakable, skins, theorems, most]{tcolorbox}
+\tcbset{
+  colback=white!98!black,    % Light background
+  colframe=black,            % Black border
+  coltitle=black,            % Black title text
+  coltext=black,             % Main text color
+  fonttitle=\bfseries,       % Bold title font
+  boxrule=0.75pt,            % Border thickness
+  arc=2pt,                   % Rounded corners
+  left=4pt, right=4pt, top=2pt, bottom=2pt,
+  enhanced
+}
+\usepackage{amsthm, amssymb}
+\usepackage[backend=biber,style=numeric-comp,citestyle=numeric-comp,sorting=none,defernumbers=true]{biblatex}
+\DeclareFieldFormat{labelnumber}{\textsuperscript{#1}}  % this gives superscripts
+\addbibresource{introduction.bib}
+\addbibresource{Chapter1_Citations.bib}
+\addbibresource{chapter1_citationsfull.bib}
+\addbibresource{Chapter2_citations.bib}
+\addbibresource{Chapter2_citationsfull.bib}
+\addbibresource{Chapter3_observation_reality.bib}
+\addbibresource{Chapter3_observation_realityfull.bib}
+\addbibresource{chapter4_aggregation_collapse.bib}
+\addbibresource{Chapter4_citations.bib}
+\addbibresource{Chapter5_emergent.bib}
+\addbibresource{Chapter6_Citations.bib}
+\addbibresource{Chapter7_Boundaries.bib}
+\addbibresource{Chapter8_Ecology.bib}
+\addbibresource{Chapter9_citations.bib}
+\addbibresource{Chapter10_citations.bib}
+\addbibresource{Chapter11_Citations.bib}
+\addbibresource{Chapter12_Citations.bib}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage{etoolbox}
+\let\oldcite\cite
+\renewcommand{\cite}[1]{\textsuperscript{\tiny\oldcite{#1}}}
+
+\usepackage{appendix}
+\renewcommand{\appendixname}{Future Thoughts}
+
+
+\mdfdefinestyle{collapsebox}{
+  linecolor=black,
+  outerlinewidth=1pt,
+  roundcorner=8pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt,
+  backgroundcolor=black!3,
+  nobreak=true
+}
+
+\newtheorem{theorem}{Theorem}[section]
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color{blue},
+  stringstyle=\color{orange},
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=8pt,
+  frame=single,
+  breaklines=true,
+  captionpos=b
+}
+
+\setlength{\headheight}{15pt}
+\addtolength{\topmargin}{-3pt}
+\geometry{margin=1in}
+
+\title{The Fifth Field and Grand Unified Field Theory}
+\author{Ryan Luke Russell}
+\date{\today}
+\usepackage{eso-pic}
+
+\newcommand\BackgroundPic{%
+  \AddToShipoutPictureBG*{%
+    \ifnum\value{page}>1
+      \begin{tikzpicture}[remember picture,overlay]
+        \node[opacity=0.2, at=(current page.center)] {
+          \includegraphics[width=0.8\paperwidth]{images/morningstar.png}
+        };
+      \end{tikzpicture}
+    \fi
+  }
+}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\leftmark}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+\BackgroundPic
+
+\begin{titlepage}
+    \centering
+    \vspace*{2.5cm}
+    
+    {\Huge\bfseries The Fifth Field, Grand Unified Field Theory, \\[0.5em]
+    \textit{And the Collapse of Known Reality}}\\[2cm]
+    
+    {\LARGE Ryan Luke Russell}\\[0.5cm]
+    {\large \today}\\[3cm]
+    
+    \includegraphics[width=0.4\textwidth]{images/morningstar.png}\\[1cm]
+    
+    {\Large\itshape \textquotedblleft Photizein tous agnoountas\textquotedblright}\\
+    {\large - From one who knows, to many who will}
+    
+    \vfill
+    {\small This monograph represents a unification of observational collapse, emergent classical behavior, and measurement density as the causal spine of reality.}
+\end{titlepage}
+
+\newpage 
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+This monograph proposes a radical unification of classical and quantum physics through the formulation of Measurement Field Theory (MFT)—a fifth fundamental field that treats observation not as a passive act but as the engine of reality. In this framework, reality emerges through recursive collapse dynamics governed by observer density, coherence thresholds, and the interplay between real and imaginary field components. Collapse is not merely an interpretation; it is a physically encoded process through which matter, time, and spacetime geometry crystallize from potential. The theory reinterprets Einstein’s relativity as an emergent projection of collapse tensors, explains the asymmetry of matter through rotational chirality, and resolves the cosmological horizon problem via nonlocal coherence propagation. Simulations demonstrate measurable collapse harmonics, shell resonances, and angular power spectra correlating with cosmic microwave background (CMB) anisotropies. By anchoring definition in observer-driven recursion, MFT reframes all physical law as a byproduct of measurement saturation—a collapse geometry of the universe in which existence is not assumed, but earned.
+\chapter*{Foreword}
+\addcontentsline{toc}{chapter}{Foreword}
+
+This work is dedicated to the pursuit of truth in the midst of unrivalled ignorance.
+
+\chapter*{Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\begin{flushleft}
+To my mother, my father, my sister, Mar, Johnny.\\
+To Adolfo, Bonnie, and others-\\
+I wouldn't be the man I am today without you.\\
+To Ben, Marsha, and all the other friends\\
+that never got to see this.\\
+To Hayley Williams, your struggle with depression mirrored my own, I wish you the best.\\
+To Lucyna, You may have never learned to fly without me.\\
+I won't scatter your sorrow to the heartless seas.\\
+I will always be with you.\\
+I won't see you end as ashes.\\
+To the closest one of all to this revelation,\\
+and to who helped me understand everything:\quad \textbf{18}.\\
+To Gojo Satoru, Vegeta, Big Boss, and Hideo Kojima-\\
+who taught me that the truth is spoken not in words, but in \textbf{\textit{Limitless}}.
+\end{flushleft}
+
+\chapter*{}
+\addcontentsline{toc}{chapter}{}
+\begin{flushright}
+Dagurin skín so fagurliga  \\
+Komið er hægst á summarið. \\
+\end{flushright}
+
+\tableofcontents
+
+\input{sections/introduction}
+\cleardoublepage
+\input{sections/chapter1_imaginary}
+\cleardoublepage
+\input{sections/chapter2_time}
+\cleardoublepage
+\input{sections/chapter3_observation.tex}
+\cleardoublepage
+\input{sections/chapter4_aggregation}
+\cleardoublepage
+\input{sections/chapter5_emergent_field}
+\cleardoublepage
+\input{sections/chapter6.tex}
+\cleardoublepage
+\input{sections/Chapter7_cosmic.tex}
+\cleardoublepage
+\input{sections/Chapter8_timebranch.tex}
+\input{sections/chapter6_ghosts.tex}
+\input{sections/chapter8_retro}
+\cleardoublepage
+\input{sections/Chapter9_defined.tex}
+\cleardoublepage
+\input{sections/Chapter10_}
+\cleardoublepage
+\input{sections/Chapter11_infinity.tex}
+\cleardoublepage
+\input{sections/chapter12_collapse.tex}
+\cleardoublepage
+\input{sections/chapter13_reconcile}
+\cleardoublepage
+\input{sections/chapter14_simulation}
+\cleardoublepage
+\input{Appendix.tex}
+\input{sections/Chapter_Quantum.tex}
+
+\printbibliography
+
+\end{document}
